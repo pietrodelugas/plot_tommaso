@@ -37,9 +37,9 @@ def bulk_disp(h,k,l,branch,param,S):
 
 
   if branch == 0:
-     res = -0.5*S*( (AA+BB) + np.sqrt( (AA+BB)**2. - 4.*(AA*BB - np.asb(AB)**2.) )) 
+     res = -0.5*S*( (AA+BB) + np.sqrt( (AA+BB)**2. - 4.*(AA*BB - np.abs(AB)**2.) )) 
   else:
-     res = -0.5*S*( (AA+BB) - np.sqrt( (AA+BB)**2. - 4.*(AA*BB - np.asb(AB)**2.) )) 
+     res = -0.5*S*( (AA+BB) - np.sqrt( (AA+BB)**2. - 4.*(AA*BB - np.abs(AB)**2.) )) 
   return res
 
 
